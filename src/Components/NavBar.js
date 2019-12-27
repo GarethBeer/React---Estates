@@ -1,13 +1,23 @@
 import React from "react";
 
-import "../Style/nav-bar.css";
-
-function NavBar() {
+const NavBar = () => {
 	return (
-		<div className="App">
-			<h1>Estates</h1>
-		</div>
+		<nav className="navbar-container">
+			<div className="navbar-logo">
+				<i className="fas fa-home"></i>
+				<span>Surreal Estates</span>
+			</div>
+			<ul>
+				<li>Properties</li>
+				<li>Add Properties</li>
+				<li>Favourites</li>
+			</ul>
+			<div className="sign-on">
+				<i className="fas fa-user"></i>
+				<span>Sign In</span>
+			</div>
+		</nav>
 	);
-}
+};
 
 export default NavBar;
